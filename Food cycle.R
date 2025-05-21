@@ -173,7 +173,7 @@ server <- function(input, output, session) {
       div(class = "centered-modal",
           div(class = "modal-content",
               div(style="text-align:center;margin-bottom:18px;",
-                  img(src = "https://img.icons8.com/color/96/food-bank.png", height="56px"),
+                  tags$span("🍲", style = "font-size:48px;"),
                   h2("FOOD CYCLE"),
                   p("Solusi untuk Mengurangi Food Waste", style="color:#2e7d32;")
               ),
@@ -428,4 +428,3 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui = ui, server = server)
-
